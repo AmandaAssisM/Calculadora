@@ -1,10 +1,10 @@
 # CALCULATOR
 
-> Um calculadora com operadores básicos.
+> Um calculadora simples com operadores básicos.
 
 ## Diagrama
 
-<img src="" alt="diagrama" width="400">
+<img src="https://user-images.githubusercontent.com/92966154/142061754-25dd5440-188c-4068-87ae-077c938290c6.png" alt="diagrama" width="400">
 
 ## 💻 Pré-requisitos
 
