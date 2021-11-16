@@ -1,17 +1,19 @@
 def pegar_entrada_usuario():
-    try:
-        number_1 = float(input('Enter your first number: '))
-        number_2 = float(input('Enter your second number: '))
-        
+    while True:
+        try:
+            number_1 = float(input('Enter your first number: '))
+            number_2 = float(input('Enter your second number: '))
+            
+        except (ValueError, TypeError):
+            print('ERRO: por favor, digite um número válido.')
+            continue
 
-    except (ValueError, TypeError):
-        print('Tivemos um problema com o tipo de dado que você digitou.')
+        return number_1, number_2
 
-    return number_1, number_2
 
 def pegar_opcao_menu():
     menu()
-    opcao = input('Opção: ')
+    opcao = input('Digite sua opção: ')
     return opcao
 
 
@@ -22,21 +24,22 @@ def menu():
     [*] for multiplication
     [/] for division''')
 
+
 def verificar_opcao(opcao, number_1, number_2):
     opções_validas = ['+', '-', '*', '/']
 
-    while opcao not in opções_validas:
-        if opcao == '+':
-            print(f'{number_1} + {number_2} = {number_1 + number_2}')
-            
-        elif opcao == '-':
-            print(f'{number_1} - {number_2} = {number_1 - number_2}')
+    while  opcao not in opções_validas:
+        print('Insira uma opção válida.')
+        opcao = input('Digite sua opção: ')
 
-        elif opcao == '*':
-            print(f'{number_1} x {number_2} = {number_1 * number_2}')
+    if opcao == '+':
+        print(f'{number_1} + {number_2} = {number_1 + number_2}')
+                
+    elif opcao == '-':
+        print(f'{number_1} - {number_2} = {number_1 - number_2}')
 
-        elif opcao == '/':
-            print(f'{number_1} / {number_2} = {number_1 / number_2}')
-        
-        else:
-            print('Insira uma opção válida.')
+    elif opcao == '*':
+        print(f'{number_1} x {number_2} = {number_1 * number_2}')
+
+    elif opcao == '/':
+        print(f'{number_1} / {number_2} = {number_1 / number_2}')
