@@ -6,16 +6,16 @@
 
 <img src="" alt="diagrama" width="400">
 
-## Pré-requisitos
+## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Python 3.6 +
 
-## Instalando
+## 🚀 Instalando
 
 Este projeto foi construído com bibliotecas nativas.
 
-## Usando 
+## ☕ Usando 
 
 Para usar siga estas etapas:
 
